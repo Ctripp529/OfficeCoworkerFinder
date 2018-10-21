@@ -1,0 +1,24 @@
+{
+  "name": "officecoworkerfinder",
+  "version": "1.0.0",
+  "description": "The Office Themed Friend Finder",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ctripp529/OfficeCoworkerFinder.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ctripp529/OfficeCoworkerFinder/issues"
+  },
+  "homepage": "https://github.com/Ctripp529/OfficeCoworkerFinder#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4"
+  }
+}

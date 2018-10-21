@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous"></script>
+  <title>Coworker Compatiblity</title>
+  <style>
+    body {background-image: url("./images/backgroundimg.png"); background-repeat: no-repeat; background-size: cover;font-family: 'IBM Plex Mono', monospace;};
+            .jumbotron {background-color:rgba(194, 194, 193, 0.187); font-family: 'IBM Plex Mono', monospace;};
+     </style>
+
+</head>
+
+<body>
+  <!--CHARACTER LIST  -->
+  <!-- JIM; DWIGHT; MICHAEL; TOBY; ANDY-->
+  <div class="container">
+    <div class="jumbotron">
+      <img class="rounded float-right" src="./images/titleimg.png" width="475px" height="250px">
+      <h1 class="display-block" id="typeWriter">Coworker Compatiblity</h1>
+      <h2 class="lead" id="typeWriterSub">Whenever I'm about to do something, I think, "Would an idiot do that?" And if
+        they would, I do not do that thing.</h2>
+      <sub class="float-left">-Dwight Schrute</sub>
+
+      <br>
+      <br>
+      <br>
+      <p class="lead">
+        <a class="btn btn-primary btn-lg" href="./home" role="button">Home</a>
+      </p>
+    </div>
+  </div>
+  <div class="container">
+    <form>
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="input" class="form-control" id="userName" placeholder="Michael Scott">
+      </div>
+      <div class="form-group">
+        <label for="userImg">Upload Image link</label>
+        <input type="text" class="form-control" id="userPhoto" placeholder="Photo link here">
+      </div>
+      <div class="form-group">
+        <label for="q1">How often do you find you bend the rules?</label>
+        <select class="form-control" id="questionOne">
+          <option value="1">1 (Never)</option>
+          <!-- TOBY -->
+          <option value="2">2</option>
+          <!-- DWIGHT -->
+          <option value="3">3</option>
+          <!-- ANDY-->
+          <option value="4">4</option>
+          <!-- MICHAEL -->
+          <option value="5">5 (Always)</option>
+          <!-- JIM -->
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="q2">How often are you causing a mischievous act?</label>
+        <select class="form-control" id="questionTwo">
+          <option value="1">1 (Never)</option>
+          <!-- TOBY -->
+          <option value="2">2</option>
+          <!-- ANDY-->
+          <option value="3">3</option>
+          <!-- MICHAEL -->
+          <option value="4">4</option>
+          <!-- DWIGHT -->
+          <option value="5">5 (Always)</option>
+          <!-- JIM -->
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="q3">How seriously would you take volunteer emergency employement?</label>
+        <select class="form-control" id="questionThree">
+          <option value="1">1 (Not Seriously)</option>
+          <!--  JIM -->
+          <option value="2">2</option>
+          <!-- MICHAEL -->
+          <option value="3">3</option>
+          <!-- TOBY -->
+          <option value="4">4</option>
+          <!-- ANDY -->
+          <option value="5">5 (Very Seriously)</option>
+          <!-- DWIGHT -->
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="q4">Do you prefer blondes or red heads?</label>
+        <select class="form-control" id="questionFour">
+          <option value="1">1 (Red)</option>
+          <!-- ANDY-->
+          <option value="2">2</option>
+          <!-- TOBY -->
+          <option value="3">3 (Bruenette)</option>
+          <!-- MICHEAL -->
+          <option value="4">4</option>
+          <!-- JIM-->
+          <option value="5">5 (Blonde)</option>
+          <!-- DWIGHT -->
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="q5">How great are paper companies?</label>
+        <select class="form-control" id="questionFive">
+          <option value="1">1 (Great...I guess.)</option>
+          <!-- ANDY-->
+          <option value="2">2</option>
+          <!-- TOBY -->
+          <option value="3">3</option>
+          <!-- JIM -->
+          <option value="4">4</option>
+          <!-- DWIGHT -->
+          <option value="5">5 (Really Great)</option>
+          <!-- MICHAEL -->
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="q6">How do you feel about farming?</label>
+        <select class="form-control" id="questionSix">
+          <option value="1">1 (No Thanks)</option>
+          <!-- MICHAEL -->
+          <option value="2">2</option>
+          <!-- JIM-->
+          <option value="3">3</option>
+          <!--TOBY-->
+          <option value="4">4</option>
+          <!-- ANDY-->
+          <option value="5">5 (Love It!)</option>
+          <!-- DWIGHT -->
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="q7">How would you rate the HR department?</label>
+        <select class="form-control" id="questionSeven">
+          <option value="1">1 (Low)</option>
+          <!-- MICHAEL-->
+          <option value="2">2</option>
+          <!-- DWIGHT-->
+          <option value="3">3</option>
+          <!-- ANDY -->
+          <option value="4">4</option>
+          <!-- JIM -->
+          <option value="5">5 (Useful)</option>
+          <!-- TOBY -->
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="q8">How often do you sing in your day?</label>
+        <select class="form-control" id="questionEight">
+          <option value="1">1 (Never)</option>
+          <!-- DWIGHT -->
+          <option value="2">2</option>
+          <!-- TOBY -->
+          <option value="3">3</option>
+          <!-- JIM -->
+          <option value="4">4</option>
+          <!-- MICHAEL -->
+          <option value="5">5 (Always)</option>
+          <!-- ANDY -->
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="q9">Do you find yourself to be the comedian?</label>
+        <select class="form-control" id="questionNine">
+          <option value="1">1 (Never)</option>
+          <!-- TOBY -->
+          <option value="2">2</option>
+          <!-- DWIGHT -->
+          <option value="3">3</option>
+          <!-- ANDY -->
+          <option value="4">4</option>
+          <!-- JIM -->
+          <option value="5">5 (Always)</option>
+          <!-- MICHAEL -->
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="q10">Do you think everyone likes you?</label>
+        <select class="form-control" id="questionTen">
+          <option value="1">1 (Nope)</option>
+          <!-- TOBY -->
+          <option value="2">2</option>
+          <!-- DWIGHT -->
+          <option value="3">3</option>
+          <!-- JIM -->
+          <option value="4">4</option>
+          <!-- ANDY -->
+          <option value="5">5 (Of Course!)</option>
+          <!-- MICHAEL -->
+        </select>
+      </div>
+      <button type="submit" class="btn btn-secondary" id="submitBtn">Submit</button>
+
+
+    </form>
+  </div>
+  <br>
+  <div class="container">
+    <p> <a href="/data/coworkers">API Coworker List</a> |
+      <a href="/data/friends">API Friends List</a>
+    </p>
+  </div>
+  <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" id="matchModal">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content" style="background-color: #4ec1f2cb;">
+        <div class="modal-header">
+          <h5 class="modal-title">Compatible Coworkers</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-sm-4">
+              <h5 id="friendName"></h5>
+              <img id="friendImg" src="" style="width:200px; height:200px;">
+            </div>
+            <div class="col-sm-4" style="padding-top: 6em;">
+              <h4>Your Match is...</h4>
+            </div>
+            <div class="col-sm-4">
+              <h5 id="coworkerMatch"></h5>
+              <img id="coworkerMatchImg" src="" style="width:200px; height: 200px;">
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <a class="btn btn-secondary btn-sm" href="./survey" role="button">Try Again!</a>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script type="text/javascript">
+    $("#submitBtn").on("click", function (event) {
+      event.preventDefault();
+      //console.log("you hit the sumbit button!")
+
+      var userInput = {
+        userName: $("#userName").val().trim(),
+        userPhoto: $("#userPhoto").val().trim(),
+        scores: [
+          $("#questionOne").val().trim(),
+          $("#questionTwo").val().trim(),
+          $("#questionThree").val().trim(),
+          $("#questionFour").val().trim(),
+          $("#questionFive").val().trim(),
+          $("#questionSix").val().trim(),
+          $("#questionSeven").val().trim(),
+          $("#questionEight").val().trim(),
+          $("#questionNine").val().trim(),
+          $("#questionTen").val().trim(),
+        ]
+      };
+      $.post("/data/friends", userInput)
+        .done(function (data) {
+
+          $("#coworkerMatch").html(data.coworkerMatch);
+          console.log("coworker name: " + data.coworkerMatch);
+          $("#friendName").html(userInput.userName);
+          // console.log("user name: "+ userInput.userName);
+          $("#coworkerMatchImg").attr("src", data.coworkerMatchImg);
+          //console.log("Image: " + data.coworkerMatchImg)
+          $("#friendImg").attr("src", userInput.userPhoto);
+          //console.log("user img: "+ userInput.userPhoto);
+          $("#matchModal").modal("show");
+          window.onclick = function (event) {
+            if (event.target == matchModal) {
+              matchModal.style.display = "none";
+            }
+          }
+
+        });
+
+    })
+  </script>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>
